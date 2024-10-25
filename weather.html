@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+ <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+  <div class="weather-app">
+    <div class="container">
+      <h2 class="brand">The Weather </h2>
+      <div>
+        <h1 class="temp"> <span id="temp"></span>&#176;C</h1>
+        <div class="city-time">
+          <h1 class="name"><span id="cityName"></span></h1>
+          <small>
+            <span class="time">08:09</span>
+            -
+            <span class="date">
+              Tusday apr11
+            </span>
+          </small>
+        </div>
+        <div class="weather">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH2r83QZx8T-8S1eWS9bI5zUQO93ubV7wXHg&usqp=CAU"
+            class="icon" alt="icon" width="50" haeight="50" />
+          <span class="condition"> cloudy </span>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+
+      <form id="locationInput" role="search">
+        <input  id="city" type="text" class="search" placeholder="search Location .." aria-label="Search" />
+        <button type="submit" class="submit" id="submit">
+        <i class="fa fa-search"></i>
+        </button>
+      </form>
+
+
+      <ul class="cities">
+       
+        <h4> Weather Details</h4>
+
+      </ul>
+
+      <ul class="details">
+  
+        <li>Min temp is <span id="min_temp"></span></li>
+        <li>Max temp is <span id="max_temp"></span></li>
+        <li>Cloud PCT is <span id="cloud_pct"></span></li>
+        <li>Feels Like is <span id="feels_like"></span></li>
+        <li>Humidity is <span id="humidity"></span></li>
+        <li>Wind degree is <span id="wind_degrees"></span></li>
+        <li>wind speed is <span id="wind_speed"></span></li>
+        <li>Sunrise Time is <span id="sunrise"></span></li>
+        <li>Sunset Time is <span id="sunset"></span></li>
+
+      </ul>
+    </div>
+  </div>
+
+
+
+<script src="weather.js"></script>
+
+
+</body>
+
+</html>
